@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trasportes X 2020</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/transporte.css">
+    {{!-- <link rel='stylesheet' href='/stylesheets/style.css' /> --}}
+  </head>
+  <body>
+     <header>
+        <div class="holder">
+            <div class="logo">
+                <img src="images/logo.png" width="100" alt="Transportes X">
+                <h1>Transportes X</h1>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="holder">
+            <ul>
+                <li><a href="/" class="{{#if IsHome}}activo{{/if}}">Home</a></li>
+                <li><a href="/nosotros" class="{{#if IsNosotros}}activo{{/if}}">Nosotros</a></li>
+                <li><a href="/servicios" class="{{#if IsServicios}}activo{{/if}}">Servicios</a></li>
+                <li><a href="/galeria" class="{{#if IsGaleria}}activo{{/if}}">Galería</a></li>
+                <li><a href="/novedades" class="{{#if IsNovedades}}activo{{/if}}">Novedades</a></li>
+                <li><a href="/contacto" class="{{#if IsContacto}}activo{{/if}}">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    {{{body}}}
+     <footer>
+        <p>Diseñado por ..  Junio 2020</p>
+    </footer>
+  </body>
+</html>

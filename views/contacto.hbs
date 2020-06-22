@@ -1,0 +1,38 @@
+ <main class="holder">
+        <div class="columna left">
+            <h2>Contacto Rapido</h2>
+            <form action="/contacto" method="post" class="formulario">
+                <p>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" />
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="text" id="" name="email"/>
+                </p>
+                <p>
+                    <label for="tel">Tel</label>
+                    <input type="text" id="tel" name="tel" />
+                </p>
+                <p>
+                    <label for="mensaje">Comentarios</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </p>
+                <p class="acciones"><input type="submit" value="Enviar"></p>
+            </form>
+        
+           <p class="men">{{message}}</p>
+
+        </div>
+        <div class="columna right">
+            <h2>Otras vías de contacto</h2>
+            <p>Tambien puede contactarse con nosotros usando los siguientes medios:</p>
+            <ul>
+                <li>Telefono: 12346789</li>
+                <li><a href="mailto:fl@">fla@</a></li>
+                <li><a href="">Facebook:</a></li>
+                <li>Twitter</li>
+                <li>Skype</li>
+            </ul>
+        </div>
+    </main>
