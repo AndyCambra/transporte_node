@@ -3,14 +3,14 @@ var md5=require('md5');
 
 async function getUserByUsernameAndPassword(user,password){
     try{
-        var query= "select * from usuarios where usuario = ? and password =? limit 1";
+        var query= "select * from usuarios where usuario = ? and password = ? limit 1";
         var rows= await pool.query(query, [user, md5(password)]);
         return rows[0];
     }catch(error){
         throw error;
     }//fin catch
 }//fin function
-module.exports = { getUserByUsernameAndPassword } 
+module.exports = { getUserByUsernameAndPassword }
 
 //try - catch > estructura de control de manejo de errores > despues hbs con un if podemos
 // error > usuario incorrecto en el cao que coloque mal el user o pass
